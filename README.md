@@ -25,7 +25,7 @@ git clone https://github.com/cauamillersjc/front-shopper.git
 
 Navegue para o diretório do projeto:
 ```bash
-cd nome-do-seu-projeto
+cd front-shopper
 ```
 
 Instale as dependências do projeto usando o npm:
