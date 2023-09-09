@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Como Rodar o Projeto Front-end em React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este guia explicará como configurar e rodar o projeto front-end em React em seu ambiente usando a versão Node.js 18.17.0.
 
-## Available Scripts
+## Pré-requisitos
 
-In the project directory, you can run:
+Antes de começar, você precisará ter o Node.js e o npm instalados em seu sistema. Certifique-se de que você está usando a versão Node.js 18.17.0 ou superior. Você pode verificar a versão do Node.js com o seguinte comando:
 
-### `npm start`
+```bash
+node -v
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Certifique-se de que o npm também esteja instalado:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+npm -v
+```
 
-### `npm test`
+## Configuração do Projeto
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Clone o repositório do projeto para o seu computador:
+```bash
+git clone https://github.com/cauamillersjc/front-shopper.git
+```
 
-### `npm run build`
+Navegue para o diretório do projeto:
+```bash
+cd nome-do-seu-projeto
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Instale as dependências do projeto usando o npm:
+```bash
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Rodando o Projeto
+Após a configuração inicial, você pode iniciar o servidor de desenvolvimento para rodar o projeto:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm start
+```
+Isso iniciará o servidor de desenvolvimento e abrirá o aplicativo em seu navegador padrão. O aplicativo será recarregado automaticamente sempre que você fizer alterações nos arquivos.
 
-### `npm run eject`
+## Construindo para Produção
+Para criar uma versão otimizada do seu aplicativo para produção, você pode usar o seguinte comando:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+npm run build
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Os arquivos otimizados serão gerados na pasta build. Você pode implantar esses arquivos em um servidor da web para disponibilizar seu aplicativo ao público.
